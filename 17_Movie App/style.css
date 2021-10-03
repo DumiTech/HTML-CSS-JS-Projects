@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+:root {
+    --primary-color: darkcyan;
+    --secondary-color: #373b68;
+    --tertiary-color: rgb(0,132,132);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+header {
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--secondary-color);
+}
+
+.searchBtn {
+    background-color: transparent;
+    border-radius: 25px;
+    cursor: pointer;
+    outline: none;
+    color: wheat;
+    font-family: inherit;
+    width: 60px;
+    position:relative;
+    margin-right: -280px;
+    height: 35px;
+}
+
+.search {
+    background-color: transparent;
+    border: 2.5px solid var(--primary-color);
+    border-radius: 45px;
+    font-family: inherit;
+    font-size: .9rem;
+    padding: 0.3rem 0.9rem;
+    color: wheat;
+    margin-right: 70px;
+}
+
+.search::placeholder {
+    color:bisque;
+}
+
+.search:focus {
+    outline: none;
+    background-color: #372b68;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie {
+    width: 320px;
+    margin: 1.2rem;
+    background-color: var(--tertiary-color);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.movie img {
+    width: 100%;
+}
+
+.movie-info {
+    color:bisque;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.27rem 1rem 1rem;
+    letter-spacing: 0.55px;
+}
+
+.movie h3 {
+    margin-top: 0;
+}
+
+
+.movie-info span {
+    background-color: var(--primary-color);
+    padding: 0.27rem 0.6rem;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.movie-info span.green {
+    color:lightgreen;
+}
+
+.movie-info span.orange {
+    color:orange;
+}
+
+.movie-info span.red {
+    color: red;
+}
+
+.overview {
+    background-color:antiquewhite;
+    padding: 1.5rem;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform 0.33s ease-in;
+}
+
+.movie:hover .overview {
+    transform: translateY(0);
+}
