@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    margin: 0;
+    background-position: center center;
+    background-size: cover;
+    transition: .7s;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    z-index: -1;
+}
+
+.slider-container {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15), 0 3px 6px rgba(0,0,0,0.25);
+    height: 70vh;
+    width: 70vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    opacity: 0;
+    height: 100vh;
+    width: 100vw;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    top: -15vh;
+    left: -15vw;
+    transition: 0.33s ease;
+    z-index: 1;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.arrow {
+    position: fixed;
+    background-color: transparent;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    border: 2px solid orange;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer
+}
+
+.arrow:focus {
+    outline: 0;
+}
+
+.left-arrow {
+    left: calc(15vw - 65px);
+}
+
+.right-arrow {
+    right: calc(15vw - 65px);
+}
+
+.search .input {
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    padding: 12px;
+    height: 40px;
+    width: 40px;
+    transition: width 0.3s ease;
+    color: black;
+}
+
+.btn {
+    background-color: beige;
+    border: 0;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 40px;
+    width: 40px;
+    transition: transform 0.3s ease;
+}
+
+.btn:focus, 
+.input:focus {
+    outline: none;
+}
+
+.search.active .input {
+    width: 240px;
+}
+
+.search.active .btn {
+    transform: translateX(200px);
+}
