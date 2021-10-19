@@ -4,7 +4,6 @@ const background = document.getElementById('background');
 
 emailEl.addEventListener('input', (e) => {
   const input = e.target.value;
-  console.log(e.target.value);
 });
 
 passwordEl.addEventListener('input', (e) => {
