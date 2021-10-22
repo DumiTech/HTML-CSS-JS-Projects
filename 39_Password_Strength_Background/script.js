@@ -1,4 +1,4 @@
-const emailEl = (document.getElementById('email').value = '');
+const emailEl = (document.getElementById('email'));
 const passwordEl = document.getElementById('password');
 const background = document.getElementById('background');
 
