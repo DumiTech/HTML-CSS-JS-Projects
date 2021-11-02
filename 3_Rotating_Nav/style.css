@@ -85,6 +85,7 @@ nav {
     bottom: 40px;
     left: 0;
     z-index: 100;
+    font-size: 20px;
 }
 
 nav ul {
@@ -122,20 +123,27 @@ nav ul li + li + li {
 }
 
 .content {
-    max-width: 1000px;
+    max-width: 1500px;
     margin: 50px auto;
 }
 
 .content h1 {
     margin: 0;
+    text-align: center;
+    padding: 50px;
 }
 
 .content small {
     color: #999;
     font-style: italic;
+    font-size: 18px;
 }
 
 .content p {
     line-height: 1.5;
+    font-size: 20px;
 }
 
+.content h3 {
+    font-size: 20px;
+}
