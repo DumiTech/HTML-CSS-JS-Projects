@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: darkcyan;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 4rem;
+}
+
+.add {
+  position: fixed;
+  top: 2.5rem;
+  right: 2.5rem;
+  font-size: 20px;
+  background-color: darkgray;
+  color: blanchedalmond;
+  border-radius: 5px;
+  padding: 0.4rem 0.5rem;
+  border: none;
+}
+
+.note {
+  background-color: blanchedalmond;
+  box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
+  margin: 33px 22px;
+  height: 450px;
+  width: 450px;
+}
+
+.note .tools {
+  background-color: darkmagenta;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.55em;
+}
+
+.note .tools button {
+  background-color: transparent;
+  border: none;
+  color: blanchedalmond;
+  cursor: pointer;
+  font-size: 1.3rem;
+  margin-left: 0.3rem;
+}
+
+.note textarea {
+  outline: none;
+  background-color: blanchedalmond;
+  font-size: 1.3rem;
+  border: none;
+  height: 400px;
+  width: 100%;
+  padding: 22px;
+}
+
+.hidden {
+  display: none;
+}
+
+.main {
+  padding: 22px;
+}
